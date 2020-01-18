@@ -1,7 +1,5 @@
 package com.liferocks;
 
-import com.sun.xml.internal.ws.util.StringUtils;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -12,8 +10,8 @@ import java.util.List;
 public class ForLoop {
 
     public static void main(String[] args) {
-        for(int i=1; i<=4; i++){
-            for(int j=1 ;j<=i; j++){
+        for (int i = 1; i <= 4; i++) {
+            for (int j = 1; j <= i; j++) {
                 System.out.print("*");
             }
             System.out.println("");
@@ -21,8 +19,8 @@ public class ForLoop {
 
         System.out.println("========================================");
 
-        for(int i= 5; i>=1; i--){
-            for(int j=1 ; j<=i; j++){
+        for (int i = 5; i >= 1; i--) {
+            for (int j = 1; j <= i; j++) {
                 System.out.print("*");
             }
             System.out.println("");
@@ -39,39 +37,39 @@ public class ForLoop {
         daysList.add("Saturday");
         daysList.add("Sunday");
 
-        for(String day: daysList) {
+        for (String day : daysList) {
             System.out.println(day);
         }
 
         System.out.println("========================================");
 
         Iterator<String> dayIterator = daysList.iterator();
-        while(dayIterator.hasNext()){
+        while (dayIterator.hasNext()) {
             System.out.println(dayIterator.next());
         }
 
         System.out.println("========================================");
 
-        for(int i= 1; i<=5; i++){
-            for(int j=1 ; j<=3; j++){
-                if(i==j){
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 1; j <= 3; j++) {
+                if (i == j) {
                     System.out.println(i);
                     break;
-                }else{
+                } else {
                     System.out.println("O");
                 }
             }
         }
 
-        int  i = 0;
+        int i = 0;
 
-        do{
-            if(daysList.get(i).equals("Tuesday")){
+        do {
+            if (daysList.get(i).equals("Tuesday")) {
                 break;
             }
             System.out.println(daysList.get(i));
             ++i;
-        }while(true);
+        } while (true);
 
     }
 }
